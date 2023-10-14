@@ -18,11 +18,7 @@ export const Header =()=>{
             <div className='asdasdasd'>         
         
         <div>
-            {/* <NavigationButton text="Услуги" link="test"/>
-        <NavigationButton text="Test1" link="test"/>
-        <NavigationButton text="Test2" link="test"/>
-        <NavigationButton text="Test3" link="test"/> */}
-        {navigations.map((navigation)=><NavigationButton text={navigation.text} link={navigation.link}/>)}
+                   {navigations.map((navigation)=><NavigationButton text={navigation.text} link={navigation.link}/>)}
         </div>
         <div>
             <img src={pictureBackground} alt="img" />

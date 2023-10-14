@@ -1,0 +1,16 @@
+.conteiner{
+    background-color: #f6f2ef;
+    padding-top: 0;
+    padding-bottom: 38px;
+}
+
+.conteiner h2{
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 17px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    margin: 0px 600px 0px 0px;
+    
+    color: #563E2F;
+}

@@ -1,16 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/header/header';
+import Services from './components/services/services';
 
 function App() {
-  const user = {
-    name:'Inna',
-    age: 40,
-  }
+  
   return (
     <div className="App">
       <Header />
-      Hello, {user["name"]},{user.age} age!
+      <Services servisStr="Перечень оказываемых услуг"/>
     </div>
   );
 }
