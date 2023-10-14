@@ -1,5 +1,7 @@
 import {NavigationButton} from '../shared/NavigationButton'
 import pictureBackground from '../shared/assets/picture-background-1.png'
+import './header.css'
+
 
 
 export const Header =()=>{
@@ -12,9 +14,9 @@ export const Header =()=>{
     ]
 
 
-    return <div className='asdasdasd'>
-
-        <        
+    return <div className='header_fon'>
+            <div className='asdasdasd'>         
+        
         <div>
             {/* <NavigationButton text="Услуги" link="test"/>
         <NavigationButton text="Test1" link="test"/>
@@ -27,5 +29,6 @@ export const Header =()=>{
             
         </div>
     
+    </div>
     </div>
 }
