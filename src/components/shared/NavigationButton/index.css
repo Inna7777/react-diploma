@@ -1,0 +1,22 @@
+.head-button{
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    border: 1px solid #563E2F;
+    border-radius: 60px;
+    color: #563e2f;
+    line-height: 28px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+/* поведение кнопок при наведении курсора*/
+.head-button:hover{
+    background-color: #9A8C7C;
+    color: #fefdfc;
+    border: 1px solid #9A8C7C;
+}
