@@ -1,4 +1,21 @@
 .header_fon{
     background-image: url("./../shared/assets/header_fon.png");
     width: 100vw;
+    align-items: center;
+   padding-top: 30px;
+}
+.aaa{
+
+   
+ 
+}
+.asdasdasd{
+margin: 0 auto;
+align-items: center;
+background-image: url("./../shared/assets/picture-background.png");
+    background-repeat: no-repeat;
+    background-position: center ;    
+    height: 750px;
+    
+
 }

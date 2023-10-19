@@ -1,5 +1,5 @@
 import {NavigationButton} from '../shared/NavigationButton'
-import pictureBackground from '../shared/assets/picture-background-1.png'
+import pictureBackground from '../shared/assets/picture-background.png'
 import './header.css'
 
 
@@ -16,14 +16,16 @@ export const Header =()=>{
 
     return <div className='header_fon'>
             <div className='asdasdasd'>         
-        
-        <div>
+         
+        <div className='aaa'>
                    {navigations.map((navigation)=><NavigationButton text={navigation.text} link={navigation.link}/>)}
+                
         </div>
-        <div>
-            <img src={pictureBackground} alt="img" />
             
-        </div>
+        
+        
+            
+        
     
     </div>
     </div>
