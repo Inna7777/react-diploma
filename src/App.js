@@ -2,6 +2,9 @@ import './App.css';
 import { Header } from './components/header/header';
 import Portfolio from './components/portfolio/portfolio';
 import Services from './components/services/services';
+import Cost from './components/cost/cost';
+import Footer from './components/footer/footer';
+
 
 function App() {
   
@@ -10,7 +13,10 @@ function App() {
       <Header />
       <Services/>
       <Portfolio/>
-     
+      <Cost/>
+      <Footer/>
+
+           
     </div>
   );
 }

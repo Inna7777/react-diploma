@@ -5,14 +5,14 @@
     padding-bottom: 38px;
     font-family: 'Oswald', sans-serif;
     color: #563E2F;
+    text-align: start;
     
 }
 
 .serviceTitle {
     font-size: 30px;
     line-height: 17px;
-    text-align: start;
-    
+    text-align: start;  
    
 
 }

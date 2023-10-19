@@ -4,13 +4,14 @@
     padding-top: 0;
     padding-bottom: 38px;
     color: #563E2F;
-    font-family: 'Oswald', sans-serif;
+    
+    text-align: start;
 }
 
 .portfolioTitle {
     font-size: 30px;
     line-height: 17px;
-    text-align: start;
+   
     color: #563E2F;
 }
 
