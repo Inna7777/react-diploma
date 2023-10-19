@@ -3,20 +3,23 @@
     background-color: #f6f2ef;
     padding-top: 0;
     padding-bottom: 38px;
-    color: #563E2F;
     font-family: 'Oswald', sans-serif;
+    color: #563E2F;
+    
 }
 
-.portfolioTitle {
+.serviceTitle {
     font-size: 30px;
     line-height: 17px;
     text-align: start;
-    color: #563E2F;
+    
+   
+
 }
 
-.cardsContainer {
+/* .cardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 50px;
-}
+} */
