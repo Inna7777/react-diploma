@@ -1,34 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 
 
-const WorkCards = ()=>{
+const WorkCards = (props)=>{ 
+    const[state, setState] = useState("Hello");
+    
     const workPiсtures= [
-        {image:'./../work/baby_blue.jpg'},
-        {image:"./../work/dining_green.jpg"},
-        {image:"./../work/dining_grey.jpg"},
-        {image:"./../work/dining_ligth.jpg"},
-        {image:"./../work/baby_blue.jpg"},
-        {image:"./../work/holl.jpg"},
+        {image:'/work/baby_blue.jpg', id:"babyBlue"},
+        {image:"/work/card_avtor.jpg", id:"cardAvtor"},
+        {image:"/work/dining_green.jpg", id: "diningGreen"},
+        {image:"/work/dining_grey.jpg",id:"diningGrey"},
+        {image:"/work/dining_ligth.jpg", id:"diningLigth"},
+        {image:"/work/holl.jpg", id:"holl"}
 
     ];
-    const workCardsComponents = workPiсtures.map(( picture, index) => {
+    const workCardsComponents = workPiсtures.map((picture) => {
         return (
-          <div key={index} >
+          <div >
             <img src={picture.image} alt='' />
           </div>
         );
-      });
+      })
       
+const onClick = ()=>{
+  console.log('asd');
+  setState((prev)=>{
+    return prev === "Hello" ? "Goodbye": "Hello"
+  })
+}
+
     return(
         
         <div className="pictureContener">
-             <div>{workCardsComponents}
+             <div>
+              {/* {workCardsComponents} */}
 
              </div>
         
-
+          <div style={{display:"flex", flexDirection:"column"}}>
+            {state}
+            <button onClick={onClick}>test</button>
+          </div>
 
         </div>
     )

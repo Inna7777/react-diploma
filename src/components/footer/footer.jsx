@@ -3,17 +3,18 @@ import styles from "./footer.module.css"
 
 const Footer = () => {
 
-    // const icons = [
-    //     {icon:"./../footerIcons/facebook.svg"},
-    //     {icon:"./../footerIcons/instagram.svg"},
-    //     {icon:"./../footerIcons/linkedin.svg"},
-    //     {icon:'./../footerIcons/vk.svg'}
-    // ]
-    //  const iconsComponent = icons.map((icn, index) =>{
-    //     return(
-    //         <div key={index}><a href="h" img src={icn.icon} alt=""/></div>
-    //     );
-    //  })
+    const icons = [
+        {icon:"/footerIcons/facebook.svg", link:"https://google.com"},
+        {icon:"/footerIcons/instagram.svg"},
+        {icon:"/footerIcons/linkedin.svg"},
+        {icon:"/footerIcons/vk.svg"},
+    ]
+
+     const iconsComponent = icons.map(({icon, link}) =>{
+        return(
+            <a href={link} ><img src={icon} alt=""/></a>
+        );
+     })
   return (
     <div className={styles.footer}>
       <div className={styles.conteiner}>
@@ -25,7 +26,7 @@ const Footer = () => {
           <div class={styles.footerIcons}>
             <p>Мои профили в социальных сетях:</p>
             <div class={styles.footerIconsRow}>
-              {/* {iconsComponent}               */}
+               {iconsComponent}           
             </div>
           </div>
           <div class={styles.footerContacts}>
