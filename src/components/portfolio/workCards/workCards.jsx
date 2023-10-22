@@ -1,10 +1,11 @@
+import  style  from "./workCards.module.css";
 import React, { useState } from "react";
 
 
 
 
 const WorkCards = (props)=>{ 
-    const[state, setState] = useState("Hello");
+    const[state, setState] = useState(null);
     
     const workPiсtures= [
         {image:'/work/baby_blue.jpg', id:"babyBlue"},
@@ -17,32 +18,21 @@ const WorkCards = (props)=>{
     ];
     const workCardsComponents = workPiсtures.map((picture) => {
         return (
+         
           <div >
             <img src={picture.image} alt='' />
           </div>
+         
         );
       })
       
-const onClick = ()=>{
-  console.log('asd');
-  setState((prev)=>{
-    return prev === "Hello" ? "Goodbye": "Hello"
-  })
-}
 
     return(
         
-        <div className="pictureContener">
-             <div>
-              {/* {workCardsComponents} */}
-
-             </div>
-        
-          <div style={{display:"flex", flexDirection:"column"}}>
-            {state}
-            <button onClick={onClick}>test</button>
-          </div>
-
+       
+        <div className={style.conteinerPicture}>               
+              {workCardsComponents}            
+       
         </div>
     )
 }
