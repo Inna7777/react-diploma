@@ -1,4 +1,5 @@
 import  style  from "./workCards.module.css";
+import PortfolioDetalis from "../../slider/portfolioDetalis";
 import React, { useState } from "react";
 
 
@@ -6,6 +7,12 @@ import React, { useState } from "react";
 
 const WorkCards = (props)=>{ 
     const[state, setState] = useState(null);
+
+    function idArray(id){
+      
+      setState(id)
+      
+    }
     
     const workPiсtures= [
         {image:'/work/baby_blue.jpg', id:"babyBlue"},
@@ -20,7 +27,9 @@ const WorkCards = (props)=>{
         return (
          
           <div >
-            <img src={picture.image} alt='' />
+              <img src={picture.image} alt='' onClick={()=>idArray(picture.id)} /> 
+                          
+                 <p>{state}</p>
           </div>
          
         );
@@ -31,8 +40,12 @@ const WorkCards = (props)=>{
         
        
         <div className={style.conteinerPicture}>               
-              {workCardsComponents}            
-       
+              {workCardsComponents }            
+        <PortfolioDetalis id={state} />
+        <div>
+          <p>{state}</p>
+        </div>
+               
         </div>
     )
 }
