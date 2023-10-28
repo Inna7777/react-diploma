@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./cost.module.css"
+import MyButton from "../shared/button/myButton";
 
 
 const Cost =()=>{
@@ -14,9 +15,9 @@ const Cost =()=>{
                 <p>Важно! Выполняем проекты по всей России с обмерами от заказчика. 
                 Пример готового альбома с дизайном проекта отправляем на почту по запросу.</p> 
                 <div className={styles.calculator}>
-                <a href="a" className={styles.calculatorButton}>
+                <MyButton className={styles.calculatorButton}>
                 Калькулятор вашего проекта
-                </a> 
+                </MyButton> 
                 </div>
 
      

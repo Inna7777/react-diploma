@@ -1,53 +1,49 @@
-import  style  from "./workCards.module.css";
+import style from "./workCards.module.css";
 import PortfolioDetalis from "../../slider/portfolioDetalis";
 import React, { useState } from "react";
+import MyButton from "../../shared/button/myButton";
+import Dialog from "../../shared/Dialog/Dialog";
 
+const WorkCards = (props) => {
+  const [state, setState] = useState(null);
+  const [openDialog, setOpenDialog] = useState(false)
 
-
-
-const WorkCards = (props)=>{ 
-    const[state, setState] = useState(null);
-
-    function idArray(id){
-      
-      setState(id)
-      
-    }
-    
-    const workPiсtures= [
-        {image:'/work/baby_blue.jpg', id:"babyBlue"},
-        {image:"/work/card_avtor.jpg", id:"cardAvtor"},
-        {image:"/work/dining_green.jpg", id: "diningGreen"},
-        {image:"/work/dining_grey.jpg",id:"diningGrey"},
-        {image:"/work/dining_ligth.jpg", id:"diningLigth"},
-        {image:"/work/holl.jpg", id:"holl"}
-
-    ];
-    const workCardsComponents = workPiсtures.map((picture) => {
-        return (
-         
-          <div >
-              <img src={picture.image} alt='' onClick={()=>idArray(picture.id)} /> 
-                          
-                 <p>{state}</p>
-          </div>
-         
-        );
-      })
-      
-
-    return(
-        
-       
-        <div className={style.conteinerPicture}>               
-              {workCardsComponents }            
-        <PortfolioDetalis id={state} />
-        <div>
-          <p>{state}</p>
-        </div>
-               
-        </div>
-    )
+  function setPortfolioId(id) {
+    setState(id);
+    setOpenDialog(true)
+  }
+function onDialogCancel(){
+  setOpenDialog(false)
 }
+  const workPiсtures = [
+    { image: "/work/order1.jpg", id: "order1" },
+    { image: "/work/order2.jpg", id: "order2" },
+    { image: "/work/order3.jpg", id: "order3" },
+    { image: "/work/order4.jpg", id: "order4" },
+    { image: "/work/order5.jpg", id: "order5" },
+    { image: "/work/order6.jpg",   },
+  ];
+  const workCardsComponents = workPiсtures.map((picture) => {
+    return (
+      <div>
+        <img src={picture.image} alt="" onClick={() => setPortfolioId(picture.id)} />
+
+        <p>{state}</p>
+      </div>
+    );
+  });
+
+  return (
+    <div>
+      <div className={style.conteinerPicture}>
+        {workCardsComponents}
+      </div>
+      
+      
+      <Dialog open={openDialog} onCancel={onDialogCancel}>{state && <PortfolioDetalis id={state} />} </Dialog>
+      
+    </div>
+  );
+};
 
 export default WorkCards;

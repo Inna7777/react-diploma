@@ -1,9 +1,36 @@
 import { useEffect, useState } from "react"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import style from './portfolioDetalis.module.css';
 
 
 
-
+const imageArrays = [
+      
+      {link: 'work/order1/children1.jpg', alt:'Img', groop:"order1" },
+      {link: 'work/order1/children2.jpg', alt:'Img', groop:"order1" },
+      {link: 'work/order1/children3.jpg', alt:'Img', groop:"order1" },
+      {link: 'work/order1/children4.jpg', alt:'Img', groop:"order1" },
+      {link: 'work/order2/flat1.png', alt:'Img', groop:"order2" },
+      {link: 'work/order2/flat2.png', alt:'Img', groop:"order2" },
+      {link: 'work/order2/flat3.jpg', alt:'Img', groop:"order2" },
+      {link: 'work/order2/flat4.jpg', alt:'Img', groop:"order2" },
+      {link: 'work/order2/flat5.png', alt:'Img', groop:"order2" },
+      {link: 'work/order3/flat1.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat2.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat3.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat4.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat5.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat6.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat7.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat8.jpg', alt:'Img', groop:"order3" },
+      {link: 'work/order3/flat9.jpg', alt:'Img', groop:"order3" },    
+      
+    ]
+  
 
 
 const PortfolioDetalis = (props)=> {
@@ -11,36 +38,32 @@ const [state, setState] = useState([])
 
 
 useEffect(()=>{
-     
-    setState(selectionArray);
+     if (props.id) {
+      const selectionArray = imageArrays.filter((item) => item.groop === props.id ) 
+    setState(selectionArray)
+     } 
   }, [props.id]);
 
 
 
-const imageArrays = [
+
+  
    
-      {link: 'work/blue/children2.jpg', alt:'Image 2', groop:"babyBlue" },
-      {link: 'work/blue/children1.jpg', alt:'Image 1', groop:"babyBlue" },
-      {link: 'work/dining/kichen1.png', alt:'Image 1', groop: "diningGrey"},
-      {link: 'work/dining/kichen2.png', alt:'Image 2', groop:"diningGrey"},
-    ]
-  
-  
-   const selectionArray = imageArrays.filter((item) => item.groop === props.id );
 
 
-
+// 
 
     return(
         
             
-             <Swiper>
-         
-             {state.map((value)=><SwiperSlide>  
+             <Swiper navigation modules={[Navigation]}>
+              
+             {state.map((value)=><SwiperSlide className={style.pictureWork}>  
                        
-                <img src={value.link} alt={value.alt}/>
+                <img src={value.link} alt={value.alt} /> 
+                              
                 </SwiperSlide>)}   
-             
+              
          </Swiper>
         
        
