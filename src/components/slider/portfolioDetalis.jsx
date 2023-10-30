@@ -56,7 +56,7 @@ useEffect(()=>{
     return(
         
             
-             <Swiper navigation modules={[Navigation]}>
+             <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
               
              {state.map((value)=><SwiperSlide className={style.pictureWork}>  
                        

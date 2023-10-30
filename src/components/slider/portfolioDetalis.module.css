@@ -1,3 +1,8 @@
 .pictureWork img{
-     width: 500px;
+     width: 400px;
+}
+
+.swiperConteiner{
+ margin-left: 0;
+ margin-right: 0;
 }

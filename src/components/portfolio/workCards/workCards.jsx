@@ -1,7 +1,6 @@
 import style from "./workCards.module.css";
 import PortfolioDetalis from "../../slider/portfolioDetalis";
 import React, { useState } from "react";
-import MyButton from "../../shared/button/myButton";
 import Dialog from "../../shared/Dialog/Dialog";
 
 const WorkCards = (props) => {
@@ -28,8 +27,7 @@ function onDialogCancel(){
       <div>
         <img src={picture.image} alt="" onClick={() => setPortfolioId(picture.id)} />
 
-        <p>{state}</p>
-      </div>
+       </div>
     );
   });
 
