@@ -44,15 +44,6 @@ useEffect(()=>{
      } 
   }, [props.id]);
 
-
-
-
-  
-   
-
-
-// 
-
     return(
         
             
