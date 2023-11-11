@@ -20,16 +20,16 @@ const Footer = () => {
       <div className={styles.conteiner}>
         <div className={styles.footerRow}>
           <div className={ styles.footerCol}>
-            <div class={styles.footerCopyrightName}>© НАДЕЖДА ПЕШКОВА</div>
+            <div className={styles.footerCopyrightName}>© НАДЕЖДА ПЕШКОВА</div>
             <p>Дизайн интерьеров</p>
           </div>
-          <div class={styles.footerIcons}>
+          <div className={styles.footerIcons}>
             <p>Мои профили в социальных сетях:</p>
-            <div class={styles.footerIconsRow}>
+            <div className={styles.footerIconsRow}>
                {iconsComponent}           
             </div>
           </div>
-          <div class={styles.footerContacts}>
+          <div className={styles.footerContacts}>
             <a href="https://vk.com/architect_peshkova" className={styles.footerButton}>
               Связаться Вконтакте
             </a>
