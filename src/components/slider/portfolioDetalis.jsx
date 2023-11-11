@@ -39,20 +39,30 @@ const PortfolioDetalis = (props) => {
     }
   }, [props.id]);
 
-  //
 
-  return (
-    <div className={style.PortfolioDetalisConteiner}>
-       <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
-      {state.map((value) => (
-        <SwiperSlide className={style.pictureWork}>
-          <img src={value.link} alt={value.alt} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-    </div>
+
+
+  
    
-  );
-};
+
+
+// 
+
+    return(
+        
+            
+             <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
+              
+             {state.map((value)=><SwiperSlide className={style.pictureWork}>  
+                       
+                <img src={value.link} alt={value.alt} /> 
+                              
+                </SwiperSlide>)}   
+              
+         </Swiper>
+        
+       
+    )
+}
 
 export default PortfolioDetalis;
