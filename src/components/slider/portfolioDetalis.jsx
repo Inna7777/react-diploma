@@ -43,12 +43,12 @@ const PortfolioDetalis = (props) => {
     }
   }, [props.id]);
 
-
+{/* Мепим отфильтрованный массив */}
  //Используем слайдер из библиотеке  swiper/react
   return (
     <div className={style.PortfolioDetalisConteiner}>
        <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
-{/* Мепим отфильтрованный массив */}
+
       {state.map((value) => (
         <SwiperSlide className={style.pictureWork}>
           <img src={value.link} alt={value.alt} />
