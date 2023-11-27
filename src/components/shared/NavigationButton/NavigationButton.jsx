@@ -1,4 +1,4 @@
-import "./NavigationButton.module.css"
+import "./NavigationButton.css"
 
 // Создание образа навигационной кнопки сайта
 export const NavigationButton =({text, link})=>{
