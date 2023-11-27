@@ -1,5 +1,5 @@
-import style from "./workCards.module.css";
-import PortfolioDetalis from "../../slider/portfolioDetalis";
+import style from "./WorkCards.module.css";
+import PortfolioDetalis from "../../Slider/PortfolioDetalis";
 import React, { useState } from "react";
 import Dialog from "../../shared/Dialog/Dialog";
 

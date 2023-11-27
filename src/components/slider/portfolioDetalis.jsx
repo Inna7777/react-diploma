@@ -4,8 +4,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import style from "./portfolioDetalis.module.css";
-
+import style from "./PortfolioDetalis.module.css";
+// Массив картинок для отображения в слайдеpе
 const imageArrays = [
   { link: "work/order1/children1.jpg", alt: "Img", groop: "order1" },
   { link: "work/order1/children2.jpg", alt: "Img", groop: "order1" },
@@ -27,9 +27,13 @@ const imageArrays = [
   { link: "work/order3/flat9.jpg", alt: "Img", groop: "order3" },
 ];
 
+// Переменной PortfolioDetalis передаем отфильтрованный массив
+
 const PortfolioDetalis = (props) => {
   const [state, setState] = useState([]);
 
+  // Функции передаем id карточки по которой кликнули и фильтруем 
+  // массив фото. id карточки и 'groop' массива должны быть равны
   useEffect(() => {
     if (props.id) {
       const selectionArray = imageArrays.filter(
@@ -40,10 +44,11 @@ const PortfolioDetalis = (props) => {
   }, [props.id]);
 
 
-
+ //Используем слайдер из библиотеке  swiper/react
   return (
     <div className={style.PortfolioDetalisConteiner}>
        <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
+{/* Мепим отфильтрованный массив */}
       {state.map((value) => (
         <SwiperSlide className={style.pictureWork}>
           <img src={value.link} alt={value.alt} />

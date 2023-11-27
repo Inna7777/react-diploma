@@ -24,13 +24,14 @@ const CalculatorForm = (props) => {
     trigger,
     getValues,
   } = useForm({
-    mode:"onChange"
+    mode:"onBlur"
   })
 
   const squareMetr = watch("squareMetr")
   function onTarifChange(event) {
     trigger("squareMetr")
     setTarif(event.target.value);
+    alert(tarif);
   }
 
   function onCalculate() {
@@ -53,7 +54,7 @@ const CalculatorForm = (props) => {
         placeholder="Введите количество метров"
         InputProps={{ ...register("squareMetr",{
           required: "Поле обязательно к заполнению", //проверка на заполнение формы
-          min: { // проверка на заполнение ко-во введенных символов
+          min: { // проверка на введенное кол-во метров
               value: tarif === 1400? 100:0,
               message: 'должно быть не менее 100 м'
           }
@@ -71,12 +72,15 @@ const CalculatorForm = (props) => {
           value={tarif}
           onChange={onTarifChange}
           InputProps={{ ...register("tarif",{
-            required: "Поле обязательно к заполнению", //проверка на заполнение формы
+            required:{
+              value: tarif != null? "Выберите тариф": "",
+            }  //проверка на заполнение формы
+            
            
-        })}}
+        }),}}
         />
           <div>{errors?.tarif && <p>{errors?.tarif?.message || "Error!"}</p>}</div>
-      <Button variant="outlined" onClick={onCalculate} >Расчитать</Button>
+      <Button variant="outlined" onClick={onCalculate}  >Расчитать</Button>
       <span>{result}</span>
 
       </div>

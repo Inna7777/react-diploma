@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./portfolio.module.css";
-import WorkCards from "./workCards/workCards";
+import styles from "./Portfolio.module.css";
+import WorkCards from "./WorkCards/WorkCards";
 
-
+// Компонент страницы "Portfolio" содержит фото карточек
 
 const Portfolio = () => {
 

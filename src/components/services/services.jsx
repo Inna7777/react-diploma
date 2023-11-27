@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./services.module.css";
-import Card from './card/card'
+import styles from "./Services.module.css";
+import Card from './Card/Card'
 
 const Services = () =>{
 

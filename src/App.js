@@ -1,9 +1,9 @@
 import './App.css';
-import { Header } from './components/header/header';
-import Portfolio from './components/portfolio/portfolio';
-import Services from './components/services/services';
-import Cost from './components/cost/cost';
-import Footer from './components/footer/footer';
+import { Header } from './components/Header/Header';
+import Portfolio from './components/Portfolio/Portfolio';
+import Services from './components/Services/Services';
+import Cost from './components/Сost/Сost';
+import Footer from './components/Footer/Footer';
 
 
 function App() {

@@ -1,15 +1,15 @@
 import React from "react";
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 
 const Footer = () => {
-
+// Массив иконок для использования их в footer cайта
     const icons = [
         {icon:"/footerIcons/facebook.svg", link:"https://google.com"},
         {icon:"/footerIcons/instagram.svg"},
         {icon:"/footerIcons/linkedin.svg"},
         {icon:"/footerIcons/vk.svg"},
     ]
-
+// Map массива 
      const iconsComponent = icons.map(({icon, link}) =>{
         return(
             <a href={link} ><img src={icon} alt=""/></a>
@@ -26,6 +26,7 @@ const Footer = () => {
           <div className={styles.footerIcons}>
             <p>Мои профили в социальных сетях:</p>
             <div className={styles.footerIconsRow}>
+              {/* определение местоположения икон массива */}
                {iconsComponent}           
             </div>
           </div>

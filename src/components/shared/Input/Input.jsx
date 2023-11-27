@@ -1,6 +1,7 @@
 import React from "react";
 import { TextField } from "@mui/material";
 
+// создание образа Input - из библиотеки material ui 
 const Input = (props) => {
   return (
       <TextField
