@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Dialog.module.css";
-
+//диалоговое окно для использования в проекте (в Slider и CalculatorForm)
 const Dialog = (props) => {
   return (
     props.open && (

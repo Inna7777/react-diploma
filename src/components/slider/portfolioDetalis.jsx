@@ -43,7 +43,7 @@ const PortfolioDetalis = (props) => {
     }
   }, [props.id]);
 
-{/* Мепим отфильтрованный массив */}
+/* Мепим отфильтрованный массив */
  //Используем слайдер из библиотеке  swiper/react
   return (
     <div className={style.PortfolioDetalisConteiner}>
