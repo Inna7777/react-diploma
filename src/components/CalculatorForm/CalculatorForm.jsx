@@ -24,14 +24,14 @@ const CalculatorForm = (props) => {
     control,
     formState: {
            errors, //свойство проверки на ошибки
-      isValid,
+      
     },
     handleSubmit,
     watch,
     reset,
     
   } = useForm({
-    mode: "onChange",
+    mode: "onBlur",
     defaultValues:{
       tarif: 1600,
       squareMetr: null
