@@ -20,7 +20,7 @@ const Services = () =>{
     return(
         
         <div className={styles.conteiner}>
-            <h2 className={styles.serviceTitle}>Перечень оказываемых услуг</h2>
+            <h2 className={styles.serviceTitle} id="deals">Перечень оказываемых услуг</h2>
             <div className={styles.cardsContainer}>
                 { cards.map(convertCardToView)}
 

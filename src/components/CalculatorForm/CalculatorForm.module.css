@@ -15,14 +15,18 @@
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
- background-color: #e5dbce;
+ background-color: #eae6e0;
 }
 
 label {
   color: #563e2f;
 }
 
-.calculationResult{
-   margin-top: 30px;
-   width: 50px;
+.calculationResult { 
+  display: flex;
+  justify-content: center; 
+  margin: 30px 30px;
+  font-size: 24px;
+  color: #563e2f;
+  
 }

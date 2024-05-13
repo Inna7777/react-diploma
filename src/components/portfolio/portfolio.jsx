@@ -10,7 +10,7 @@ const Portfolio = () => {
       
 
     return ( <div className={styles.conteiner}>
-        <h2 className={styles.portfolioTitle}>Портфолио</h2>
+        <h2 className={styles.portfolioTitle} id='portfolio'>Портфолио</h2>
        <WorkCards/>      
         </div>)
      }

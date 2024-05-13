@@ -20,7 +20,7 @@ const Footer = () => {
       <div className={styles.conteiner}>
         <div className={styles.footerRow}>
           <div className={ styles.footerCol}>
-            <div className={styles.footerCopyrightName}>© НАДЕЖДА ПЕШКОВА</div>
+            <div className={styles.footerCopyrightName} id='contacts'> НАДЕЖДА ПЕШКОВА</div>
             <p>Дизайн интерьеров</p>
           </div>
           <div className={styles.footerIcons}>

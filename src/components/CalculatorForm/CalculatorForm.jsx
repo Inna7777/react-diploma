@@ -56,10 +56,10 @@ const CalculatorForm = (props) => {
 
   return (
     <form className={styles.calculationForm} onSubmit={handleSubmit(onSubmit)}>
-       <Controller
+      <Controller
           control={control}
-          name="tarif"              
-          
+          name="tarif"
+                            
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <div>
               <ReactSelect
@@ -70,8 +70,9 @@ const CalculatorForm = (props) => {
                               />
               {error && <div style={{ color: "red" }}>{error?.message}</div>}
             </div>
-          )}
-          />
+          )}/>
+     
+          
           
       <Input
         className={styles.calculationInput}
@@ -104,7 +105,7 @@ const CalculatorForm = (props) => {
           Расчитать
         </MyButton>
         
-        <div> <span className={styles.calculationResult}>{`${result} `} </span> </div>
+        <div className={styles.calculationResult}> <span >{`${result} `} </span> </div>
        </div>
       
     </form>

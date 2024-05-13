@@ -1,13 +1,21 @@
-.header_fon{
+/* .header_fon{
     background-image: url("./../shared/assets/header_fon.png");
     width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center ;   
     align-items: center;
    padding-top: 30px;
+} */
+
+
+.header_fon {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1, 35vh 50vh);
+    
 }
 
 
-   
- 
 
 .asdasdasd{
 margin: 0 auto;
@@ -16,6 +24,6 @@ background-image: url("./../shared/assets/picture-background.png");
     background-repeat: no-repeat;
     background-position: center ;    
     height: 75vh;
-    
+    width: 1100px;
 
 }

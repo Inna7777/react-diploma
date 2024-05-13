@@ -32,7 +32,7 @@ const imageArrays = [
 const PortfolioDetalis = (props) => {
   const [state, setState] = useState([]);
 
-  // Функции передаем id карточки по которой кликнули и фильтруем 
+  // Функции передаем id карточки по которой кликнули и фильтруем
   // массив фото. id карточки и 'groop' массива должны быть равны
   useEffect(() => {
     if (props.id) {
@@ -43,20 +43,22 @@ const PortfolioDetalis = (props) => {
     }
   }, [props.id]);
 
-/* Мепим отфильтрованный массив */
- //Используем слайдер из библиотеке  swiper/react
+  /* Мепим отфильтрованный массив */
+  //Используем слайдер из библиотеки  swiper/react
   return (
     <div className={style.PortfolioDetalisConteiner}>
-       <Swiper navigation modules={[Navigation]} className={style.swiperConteiner}>
-
-      {state.map((value) => (
-        <SwiperSlide className={style.pictureWork}>
-          <img src={value.link} alt={value.alt} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      <Swiper
+        navigation
+        modules={[Navigation]}
+        className={style.swiperConteiner}
+      >
+        {state.map((value) => (
+          <SwiperSlide className={style.pictureWork}>
+            <img src={value.link} alt={value.alt} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-   
   );
 };
 
