@@ -8,7 +8,7 @@ const Footer = () => {
         {icon:"/footerIcons/linkedin.svg"},
         {icon:"/footerIcons/vk.svg"},
     ]
-// Map массива 
+// Map массив иконок
      const iconsComponent = icons.map(({icon, link}) =>{
         return(
             <a href={link} ><img src={icon} alt=""/></a>
