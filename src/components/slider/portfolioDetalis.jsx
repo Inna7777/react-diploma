@@ -25,6 +25,22 @@ const imageArrays = [
   { link: "work/order3/flat7.jpg", alt: "Img", groop: "order3" },
   { link: "work/order3/flat8.jpg", alt: "Img", groop: "order3" },
   { link: "work/order3/flat9.jpg", alt: "Img", groop: "order3" },
+  { link: "work/order4/flat1.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat2.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat3.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat4.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat5.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat6.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order4/flat7.jpg", alt: "Img", groop: "order4" },
+  { link: "work/order5/children1.jpg", alt: "Img", groop: "order5" },
+  { link: "work/order5/children2.jpg", alt: "Img", groop: "order5" },
+  { link: "work/order5/children3.jpg", alt: "Img", groop: "order5" },
+  { link: "work/order5/children4.jpg", alt: "Img", groop: "order5" },
+  { link: "work/order6/flat1.jpg", alt: "Img", groop: "order6" },
+  { link: "work/order6/flat2.jpg", alt: "Img", groop: "order6" },
+  { link: "work/order6/flat3.jpg", alt: "Img", groop: "order6" },
+  { link: "work/order6/flat4.jpg", alt: "Img", groop: "order6" },
+  
 ];
 
 // Переменной PortfolioDetalis передаем отфильтрованный массив

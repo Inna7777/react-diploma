@@ -4,7 +4,6 @@ import styles from "./Footer.module.css"
 const Footer = () => {
 // Массив иконок для использования их в footer cайта
     const icons = [
-        {icon:"/footerIcons/facebook.svg", link:"https://google.com"},
         {icon:"/footerIcons/instagram.svg"},
         {icon:"/footerIcons/linkedin.svg"},
         {icon:"/footerIcons/vk.svg"},
