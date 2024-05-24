@@ -96,7 +96,7 @@ const CalculatorForm = (props) => {
         {errors?.squareMetr && <p>{errors?.squareMetr?.message || "Error!"}</p>}
       </div>
       <div>       
-        
+         <div className={styles.calculationResult}> <span >{`${result} рублей `} </span> </div>
         <MyButton
           
           variant="outlined"
@@ -105,7 +105,7 @@ const CalculatorForm = (props) => {
           Расчитать
         </MyButton>
         
-        <div className={styles.calculationResult}> <span >{`${result} `} </span> </div>
+       
        </div>
       
     </form>
